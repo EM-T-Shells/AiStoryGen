@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import reportWebVitals from './reportWebVitals'
 import App from './App'
 import './index.css'
 import { AuthProvider } from './context/authContext';
@@ -47,5 +46,3 @@ ReactDOM.render(
 );
 
 
-
-reportWebVitals()
