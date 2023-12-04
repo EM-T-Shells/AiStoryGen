@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -7,9 +7,7 @@ import App from './App'
 import './index.css'
 import { AuthProvider } from './context/authContext';
 
-
 // Custom Dark Theme values
-
 const darkTheme = createTheme({
   palette: {
       primary: {
@@ -31,18 +29,14 @@ const darkTheme = createTheme({
   },
 });
 
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <ThemeProvider theme={darkTheme}>
     <CssBaseline />
     <AuthProvider>
-    <BrowserRouter>
-      <App
-      />
-    </BrowserRouter>
+      <App/>
     </AuthProvider>
   </ThemeProvider>,
-  document.getElementById("root")
 );
 
 

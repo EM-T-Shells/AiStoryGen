@@ -81,8 +81,8 @@ const server = new ApolloServer({
         "Online at ${PORT}, Server is."
                     __.-._
                     '-._"7'
-                      /'.-c
-                      |  /T
+                     /'.-c
+                     |  /T
                     _)_/LI
         ==============================
       `);

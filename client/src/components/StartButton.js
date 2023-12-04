@@ -21,6 +21,7 @@ export default function StartButton() {
         variant="outlined"
         href="#about"
         endIcon={<SouthIcon />}
+        ref={ref}
         sx={{
           opacity: onScreen ? 1 : 0,
           transform: onScreen ? 'none' : 'translate(0, 2rem)',
