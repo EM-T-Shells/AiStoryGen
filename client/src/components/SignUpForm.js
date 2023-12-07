@@ -16,6 +16,7 @@ const Signup = () => {
     username: "",
     password: "",
   });
+  
   const [addUser, { error, data }] = useMutation(ADD_USER);
 
   const handleChange = (event) => {
@@ -82,7 +83,7 @@ const Signup = () => {
             component="form"
             onSubmit={handleFormSubmit}
             noValidate
-            sx={{ mt: 1, maxWidth: "45vw" }}
+            sx={{ mt: 1 }}
           >
             <Box sx={{ display: "flex", alignItems: "flex-end" }}>
               <AccountCircle sx={{ color: "#F2A2E8", mb: 2.5, mr: 1 }} />

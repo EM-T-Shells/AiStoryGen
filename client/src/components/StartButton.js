@@ -16,7 +16,7 @@ export default function StartButton() {
     setOnScreen(true);
   }, []);
   return (
-    <Container maxWidth={false} align="center" sx={{ marginTop: 6 }}>
+    <Container  align="center" sx={{ marginTop: 6 }}>
       <Button
         variant="outlined"
         href="#about"

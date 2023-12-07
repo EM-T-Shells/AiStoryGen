@@ -5,7 +5,7 @@ export default function PowerHeading() {
     <div>
       {/* Header - Powered by magic runes ...  */}
       <Container
-        maxWidth={false}
+        // maxWidth={false}
         sx={{
           alignItems: "center",
           marginBottom: 30,

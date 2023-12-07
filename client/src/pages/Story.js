@@ -6,7 +6,9 @@ import StoryBox from "../components/StoryBox"
 
 export default function Story() {
   return (
-    <Container maxWidth={true} disableGutters>
+    <Container 
+    // maxWidth={true} 
+    disableGutters>
       <div
         style={{
           backgroundImage: `url(${Background})`,

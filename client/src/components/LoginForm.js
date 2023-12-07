@@ -82,7 +82,7 @@ const Login = (props) => {
             Success! You may now head <Link to="/">back to the homepage.</Link>
           </p>
         ) : (
-          <Box component="form" noValidate sx={{ mt: 1, maxWidth: "45vw" }} onSubmit={handleFormSubmit}>
+          <Box component="form" noValidate sx={{ mt: 1, maxWidth: "md" }} onSubmit={handleFormSubmit}>
             <Box sx={{ display: "flex", alignItems: "flex-end" }}>
               <AccountCircle sx={{ color: "#F2A2E8", mb: 2.5, mr: 1 }} />
               <TextField

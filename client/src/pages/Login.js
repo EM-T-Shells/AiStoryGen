@@ -6,7 +6,9 @@ import DetailedAppBar from "../components/DetailedAppBar";
 
 export default function Login() {
   return (
-    <Container maxWidth={true} disableGutters>
+    <Container 
+    // maxWidth={true} 
+    disableGutters>
       <div
         style={{
           backgroundImage: `url(${Background})`,

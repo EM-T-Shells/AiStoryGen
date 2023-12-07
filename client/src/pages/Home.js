@@ -16,7 +16,9 @@ export default function Home() {
   return (
     <div>
       {/* IMAGE SECTION 1 */}
-      <Container maxWidth={false} disableGutters>
+      <Container 
+      // maxWidth={false} 
+      disableGutters>
         <div
           style={{
             backgroundImage: `url(${topBackground})`,
@@ -37,7 +39,7 @@ export default function Home() {
 
       {/* COLOR SECTION 1*/}
       <Container
-        maxWidth={false}
+        // maxWidth={false}
         disableGutters
         sx={{
           borderTop: 2,
@@ -58,7 +60,7 @@ export default function Home() {
 
       {/* IMAGE SECTION 2*/}
       <Container
-        maxWidth={false}
+        // maxWidth={false}
         disableGutters
         sx={{
           borderTop: 2,
@@ -84,7 +86,7 @@ export default function Home() {
 
       {/* COLOR SECTION 2 */}
       <Container
-        maxWidth={false}
+        // maxWidth={false}
         disableGutters
         sx={{
           borderTop: 2,

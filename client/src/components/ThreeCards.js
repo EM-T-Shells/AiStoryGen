@@ -13,7 +13,9 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import AnimateIn from '../components/AnimateIn'
 export default function ThreeCards() {
   return (
-    <Container maxWidth={false} disableGutters sx={{ alignItems: "center" }}>
+    <Container 
+    // maxWidth={false} 
+    disableGutters sx={{ alignItems: "center" }}>
     <AnimateIn>
       <Grid
         container

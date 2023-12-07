@@ -29,7 +29,7 @@ export default function Choices() {
 
   return (
     <Container
-      maxWidth={false}
+      // maxWidth={false}
       disableGutters
       style={{
         backgroundImage: `url(${Background})`,

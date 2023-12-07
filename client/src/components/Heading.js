@@ -25,7 +25,7 @@ export default function Heading() {
         transition: '600ms ease-in-out',
       }}
 
-        maxWidth={false}
+        // maxWidth={false}
         disableGutters
         sx={{
           marginTop: "30vh",

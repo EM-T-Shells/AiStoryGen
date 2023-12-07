@@ -11,18 +11,18 @@ const bcrypt = require("bcryptjs");
 module.exports = {
     Mutation: {
         async registerUser(_, {registerInput: {username, password} }) {
-            /* Do input validation
-            if (!( password && first_name && last_name)) {
-                res.status(400).send("All input is required");
+            if (!username || !password) {
+                throw new UserInputError('Both username and password are required', {
+                  invalidArgs: ['username', 'password'],
+                });
             }
-            */
             const oldUser = await User.findOne({ username });
 
             if (oldUser) {
                 throw new ApolloError('A user is already registered with the username: ' + username, 'USER_ALREADY_EXISTS');
             }
             
-            var encryptedPassword = await bcrypt.hash(password, 10);
+            const encryptedPassword = await bcrypt.hash(password, 10);
             
             const newUser = new User({
                 username: username,
@@ -43,9 +43,11 @@ module.exports = {
             
             return {
                 id: res.id,
-                ...res._doc
+                username: res.username,
+                token: res.token,
             };
         },
+
         async loginUser(_, {loginInput: {username, password} }) {
             /* Do input validation
             if (!(email && password)) {
